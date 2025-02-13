@@ -1,0 +1,75 @@
+<div class="registration-container">
+    <h1>Inicio</h1>
+    <h2>Registro Formulario Persona</h2>
+  
+    <form [formGroup]="registrationPerson" (ngSubmit)="onSubmit()">
+      
+      <div class="form-group">
+        <label for="Nombres">Nombres</label>
+        <input id="Nombres" type="text" formControlName="Nombres">
+      </div>
+  
+      <div class="form-group">
+        <label for="Apellidos">Apellidos</label>
+        <input id="Apellidos" type="text" formControlName="Apellidos">
+      </div>
+      
+      <div class="form-group">
+        <label for="TipoIdentificacionID">Tipo de identificación</label>
+        <select id="TipoIdentificacionID" formControlName="TipoIdentificacionID">
+            <option *ngFor="let type of TipoIdentificacions" [value]="type.value">
+                {{ type.label }}
+              </option>
+        </select>
+      </div>
+  
+    <!--  <div class="form-group">
+        <label for="NumeroIdentificacion">Número de identificación</label>
+        <input id="NumeroIdentificacion" type="text" formControlName="NumeroIdentificacion">
+        <div *ngIf="registrationPerson.get('NumeroIdentificacion')?.errors?.['invalidCedula']" class="error-message">
+          La cédula debe tener 10 dígitos numéricos.
+        </div>
+        <div *ngIf="registrationPerson.get('NumeroIdentificacion')?.errors?.['invalidPassport']" class="error-message">
+          El pasaporte debe tener 13 dígitos numéricos.
+        </div>
+      </div>  -->
+       
+      <div class="form-group">
+        <label for="NumeroIdentificacion">Número de identificación</label>
+        <input id="NumeroIdentificacion" type="text" formControlName="NumeroIdentificacion">        
+        <div *ngIf="registrationPerson.get('NumeroIdentificacion')?.errors && (registrationPerson.get('NumeroIdentificacion')?.dirty || registrationPerson.get('NumeroIdentificacion')?.touched)" class="error-message">
+          <div *ngIf="registrationPerson.get('NumeroIdentificacion')?.errors?.['invalidCedula']">
+            La cédula debe tener 10 dígitos numéricos.
+          </div>
+          <div *ngIf="registrationPerson.get('NumeroIdentificacion')?.errors?.['invalidPassport']">
+            El pasaporte debe tener 13 dígitos numéricos.
+          </div>
+        </div>
+      </div>
+
+
+  
+      <div class="form-group">
+        <label for="Email">Email</label>
+        <input id="Email" type="email" formControlName="Email">  
+        <div *ngIf="email?.invalid && (email?.dirty || email?.touched)"  class="error-message">
+          <div *ngIf="email?.errors?.['required']">Email es requerido.</div>
+          <div *ngIf="email?.errors?.['pattern']">Email debe ser correcto.</div>
+        </div>
+      </div>
+
+      <div class="form-group" *ngIf="mostrarFormGroup">  
+        <h4>Por favor, guarde el siguiente código que le servirá para crear el usuario.</h4>
+        <label id="codigoVerificacion" 
+                [ngClass]="{'codigo-verificacion': mostrarCodigo}" 
+                formControlName="codigoVerificacion">
+           {{ codigoVerificacion }} 
+        </label>
+
+      </div>
+  
+      <button type="submit" [disabled]="registrationPerson.invalid">Crear Persona</button>
+    </form>
+  </div>
+  
+  

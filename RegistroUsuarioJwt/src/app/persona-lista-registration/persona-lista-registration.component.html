@@ -1,0 +1,46 @@
+<div class="container">
+    <h2>Listado de Personas</h2>
+    
+    <form [formGroup]="searchForm" (ngSubmit)="onMostrar()" class="form-container">
+      <div class="form-group">
+        <label for="tipoIdentificacion">Tipo de Identificación</label>
+        <select id="tipoIdentificacion" formControlName="tipoIdentificacionID">
+          <option *ngFor="let tipo of tipoIdentificacions" [value]="tipo.value">
+            {{ tipo.label }}
+          </option>
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <label for="numeroIdentificacion">Número de Identificación</label>
+        <input id="numeroIdentificacion" type="text" formControlName="numeroIdentificacion" placeholder="Ingrese número">
+      </div>
+  
+      <button type="submit" class="btn-mostrar">Mostrar</button>
+    </form>
+  
+    <table class="persona-table" *ngIf="personas.length > 0">
+      <thead>
+        <tr>
+          <th>Nombre Completo</th>
+          <th>Número Identificación</th>
+          <th>Email</th>
+          <th>Estado</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let persona of personas">
+          <td>{{ persona.nombres }} {{ persona.apellidos }}</td>
+          <td>{{ persona.numeroIdentificacion }}</td>
+          <td>{{ persona.email }}</td>
+          <td>{{ persona.eliminado }}</td>
+          <td class="action-buttons">
+            <button class="btn-editar" (click)="onEditar(persona.numeroIdentificacion, persona)">Editar</button>
+            <button class="btn-eliminar" (click)="onEliminar(persona.numeroIdentificacion)">Eliminar</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

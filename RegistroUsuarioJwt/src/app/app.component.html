@@ -1,0 +1,10 @@
+ 
+<div class="grid-container" *ngIf="mostrarBotones">
+  
+  <button [routerLink]="[environment.rutas.crearPersona]" class="btn btn-secondary">Crear Persona</button>
+  <button [routerLink]="[environment.rutas.crearUsuario]" class="btn btn-primary">Crear Usuario</button>
+  <button (click)="navegar()" class="btn btn-secondary">Login</button>
+  <!-- <button [routerLink]="[environment.rutas.listarPersona]" class="btn btn-primary">Listar Persona</button>
+   -->
+</div>
+<router-outlet></router-outlet>

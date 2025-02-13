@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>MSPersona.Services</id>
+    <version>1.0.0</version>
+    <authors>MSPersona.Services</authors>
+    <description>Package Description</description>
+    <repository type="git" commit="d37f6013026ec5b98bd97a04ae01675f87005729" />
+    <dependencies>
+      <group targetFramework="net8.0">
+        <dependency id="MSPersona.Dominio" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="Serilog" version="4.2.0" exclude="Build,Analyzers" />
+        <dependency id="Serilog.Sinks.Console" version="6.0.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\DETPC\Desktop\Double V Partners\proyecto-jwt\TestCujilema\MSPersona.Services\bin\Debug\net8.0\MSPersona.Services.dll" target="lib\net8.0\MSPersona.Services.dll" />
+  </files>
+</package>

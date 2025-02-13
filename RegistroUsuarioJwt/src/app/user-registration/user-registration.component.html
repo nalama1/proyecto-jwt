@@ -1,0 +1,49 @@
+<div class="registration-container">
+    <h1>Registro Usuario</h1>
+    <h2>Datos</h2>
+    <h3>Identifícate ingresando tu número de cédula o pasaporte.</h3>
+  
+    <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="TipoIdentificacion">Tipo de identificación:</label>
+        <select id="TipoIdentificacion" formControlName="TipoIdentificacion">
+            <option *ngFor="let type of TipoIdentificacions" [value]="type.value">
+                {{ type.label }}
+              </option>
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <label for="NumeroIdentificacion">Número de identificación:</label>
+        <input id="NumeroIdentificacion" type="text" formControlName="NumeroIdentificacion">
+        <div *ngIf="registrationForm.get('NumeroIdentificacion')?.errors?.['invalidCedula']" class="error-message">
+          La cédula debe tener 10 dígitos numéricos.
+        </div>
+        <div *ngIf="registrationForm.get('NumeroIdentificacion')?.errors?.['invalidPassport']" class="error-message">
+          El pasaporte debe tener 13 dígitos numéricos.
+        </div>
+      </div>
+  
+      <div class="form-group">
+        <label for="username">Usuario:</label>
+        <input id="username" type="text" formControlName="username">
+      </div>
+  
+      <div class="form-group">
+        <label for="password">Contraseña * (Mín. 8 caracteres):</label>
+        <input id="password" type="password" formControlName="password">
+      </div>
+  
+      <div class="form-group">
+        <label for="codigoVerificacion">Código de verificación:</label>
+        <input id="codigoVerificacion" type="text" formControlName="codigoVerificacion">
+        <div *ngIf="registrationForm.get('codigoVerificacion')?.errors?.['pattern']" class="error-message">
+          El código de verificación debe ser numérico.
+        </div>
+      </div>
+  
+      <button type="submit" [disabled]="registrationForm.invalid">Crear usuario</button>
+    </form>
+  </div>
+  
+  

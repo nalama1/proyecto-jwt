@@ -1,0 +1,12 @@
+C:\Users\DETPC\Desktop\Double V Partners\proyecto-jwt\TestCujilema\NuGetCommon\bin\Release\net8.0\NuGetCommonNalama.deps.json
+C:\Users\DETPC\Desktop\Double V Partners\proyecto-jwt\TestCujilema\NuGetCommon\bin\Release\net8.0\NuGetCommonNalama.dll
+C:\Users\DETPC\Desktop\Double V Partners\proyecto-jwt\TestCujilema\NuGetCommon\bin\Release\net8.0\NuGetCommonNalama.pdb
+C:\Users\DETPC\Desktop\Double V Partners\proyecto-jwt\TestCujilema\NuGetCommon\obj\Release\net8.0\NuGetCommonNalama.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DETPC\Desktop\Double V Partners\proyecto-jwt\TestCujilema\NuGetCommon\obj\Release\net8.0\NuGetCommonNalama.AssemblyInfoInputs.cache
+C:\Users\DETPC\Desktop\Double V Partners\proyecto-jwt\TestCujilema\NuGetCommon\obj\Release\net8.0\NuGetCommonNalama.AssemblyInfo.cs
+C:\Users\DETPC\Desktop\Double V Partners\proyecto-jwt\TestCujilema\NuGetCommon\obj\Release\net8.0\NuGetCommonNalama.csproj.CoreCompileInputs.cache
+C:\Users\DETPC\Desktop\Double V Partners\proyecto-jwt\TestCujilema\NuGetCommon\obj\Release\net8.0\NuGetCommonNalama.sourcelink.json
+C:\Users\DETPC\Desktop\Double V Partners\proyecto-jwt\TestCujilema\NuGetCommon\obj\Release\net8.0\NuGetCommonNalama.dll
+C:\Users\DETPC\Desktop\Double V Partners\proyecto-jwt\TestCujilema\NuGetCommon\obj\Release\net8.0\refint\NuGetCommonNalama.dll
+C:\Users\DETPC\Desktop\Double V Partners\proyecto-jwt\TestCujilema\NuGetCommon\obj\Release\net8.0\NuGetCommonNalama.pdb
+C:\Users\DETPC\Desktop\Double V Partners\proyecto-jwt\TestCujilema\NuGetCommon\obj\Release\net8.0\ref\NuGetCommonNalama.dll

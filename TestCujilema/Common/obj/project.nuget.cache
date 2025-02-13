@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "k3QPSeJHCMS7PSCWfNashdGcmCDV6u0fElk+7JacS+QPk+fSuVpz2Se7WIAbCqY9n0fLAsj9pdo/ihol54pBcQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\DETPC\\Desktop\\Double V Partners\\proyecto-jwt\\TestCujilema\\Common\\Common.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\DETPC\\.nuget\\packages\\serilog\\4.2.0\\serilog.4.2.0.nupkg.sha512",
+    "C:\\Users\\DETPC\\.nuget\\packages\\serilog.sinks.console\\6.0.0\\serilog.sinks.console.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

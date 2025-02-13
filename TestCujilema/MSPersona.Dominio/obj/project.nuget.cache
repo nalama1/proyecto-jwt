@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "rdrtZVbT7xNyq3YJmhqtu2QxjiE6CriqgLUJdi5sGCNwCQj1ZyZlgrq0wes67MkG+5+IIOMHE2HyObn2AqSZBg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\DETPC\\Desktop\\Double V Partners\\proyecto-jwt\\TestCujilema\\MSPersona.Dominio\\MSPersona.Dominio.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\DETPC\\.nuget\\packages\\serilog\\4.2.0\\serilog.4.2.0.nupkg.sha512",
+    "C:\\Users\\DETPC\\.nuget\\packages\\serilog.sinks.console\\6.0.0\\serilog.sinks.console.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

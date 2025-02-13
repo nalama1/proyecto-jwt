@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>NuGetCommon</id>
+    <version>1.0.2</version>
+    <title>NuGetCommon</title>
+    <authors>Nalama1</authors>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <icon>robot_1.png</icon>
+    <readme>README.md</readme>
+    <description>NuGetCommon gestión de encriptación en .Net Core 8</description>
+    <repository type="git" commit="d37f6013026ec5b98bd97a04ae01675f87005729" />
+    <dependencies>
+      <group targetFramework="net8.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\DETPC\Desktop\Double V Partners\proyecto-jwt\TestCujilema\NuGetCommon\bin\Release\net8.0\NuGetCommon.dll" target="lib\net8.0\NuGetCommon.dll" />
+    <file src="C:\Users\DETPC\Desktop\Double V Partners\proyecto-jwt\TestCujilema\NuGetCommon\README.md" target="\README.md" />
+    <file src="C:\Users\DETPC\Desktop\Double V Partners\proyecto-jwt\TestCujilema\NuGetCommon\robot_1.png" target="\robot_1.png" />
+  </files>
+</package>

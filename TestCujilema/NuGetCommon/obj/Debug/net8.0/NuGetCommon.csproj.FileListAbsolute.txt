@@ -1,0 +1,12 @@
+C:\Users\DETPC\Desktop\Double V Partners\proyecto-jwt\TestCujilema\NuGetCommon\bin\Debug\net8.0\NuGetCommon.deps.json
+C:\Users\DETPC\Desktop\Double V Partners\proyecto-jwt\TestCujilema\NuGetCommon\bin\Debug\net8.0\NuGetCommon.dll
+C:\Users\DETPC\Desktop\Double V Partners\proyecto-jwt\TestCujilema\NuGetCommon\bin\Debug\net8.0\NuGetCommon.pdb
+C:\Users\DETPC\Desktop\Double V Partners\proyecto-jwt\TestCujilema\NuGetCommon\obj\Debug\net8.0\NuGetCommon.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DETPC\Desktop\Double V Partners\proyecto-jwt\TestCujilema\NuGetCommon\obj\Debug\net8.0\NuGetCommon.AssemblyInfoInputs.cache
+C:\Users\DETPC\Desktop\Double V Partners\proyecto-jwt\TestCujilema\NuGetCommon\obj\Debug\net8.0\NuGetCommon.AssemblyInfo.cs
+C:\Users\DETPC\Desktop\Double V Partners\proyecto-jwt\TestCujilema\NuGetCommon\obj\Debug\net8.0\NuGetCommon.csproj.CoreCompileInputs.cache
+C:\Users\DETPC\Desktop\Double V Partners\proyecto-jwt\TestCujilema\NuGetCommon\obj\Debug\net8.0\NuGetCommon.sourcelink.json
+C:\Users\DETPC\Desktop\Double V Partners\proyecto-jwt\TestCujilema\NuGetCommon\obj\Debug\net8.0\NuGetCommon.dll
+C:\Users\DETPC\Desktop\Double V Partners\proyecto-jwt\TestCujilema\NuGetCommon\obj\Debug\net8.0\refint\NuGetCommon.dll
+C:\Users\DETPC\Desktop\Double V Partners\proyecto-jwt\TestCujilema\NuGetCommon\obj\Debug\net8.0\NuGetCommon.pdb
+C:\Users\DETPC\Desktop\Double V Partners\proyecto-jwt\TestCujilema\NuGetCommon\obj\Debug\net8.0\ref\NuGetCommon.dll
