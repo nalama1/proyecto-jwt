@@ -17,53 +17,13 @@ SQL Server Management Studio
 
 
 ## 📁 Estructura del proyecto
-proyecto-jwt
 
-├── RegistroUsuarioJwt    # FRONTEND: Proyecto Angular para registrar personas y usuarios
-
-├── Login                 # FRONTEND: Proyecto Angular para el login de usuarios
-
-├── TestCujilema          # BACKEND: API en .NET para la autenticación y datos
-
-├── sql                   # BD: Scripts de base de datos y configuración SQL
-
-├── docker-compose.yml    # Archivo para levantar todos los contenedores
-
-├── env                   # Archivo de variables de entorno
+![image](https://github.com/user-attachments/assets/2757feb3-9938-4b1d-8e1c-053d471af6d1)
 
 
 ## 📁 Estructura de carpetas detallado
 
-proyecto-jwt/
-
-├── frontend-registro/
-
-│   ├── Dockerfile
-
-│   └── ... (código del proyecto RegistroUsuarioJwt)
-
-├── frontend-login/
-
-│   ├── Dockerfile
-
-│   └── ... (código del proyecto Login)
-
-├── backend/
-
-│   ├── Dockerfile
-
-│   └── ... (código del proyecto TestCujilema)
-
-├── sql/
-
-│   ├── Dockerfile
-
-│   ├── base_datos.sql
-
-├── docker-compose.yml
-
-└── .env
-
+![image](https://github.com/user-attachments/assets/75c7f56c-ab95-450f-abec-9b0085e82917)
 
 
 ## 🚀 Instrucciones para ejecutar el proyecto
