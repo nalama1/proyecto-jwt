@@ -133,10 +133,10 @@ Install-Package Microsoft.AspNetCore.Authentication.JwtBearer
 
 Para que el backend funcione correctamente, sigue estos pasos:
 
-# Crear la base de datos
+### Crear la base de datos
 Ejecutar el script base_datos_proyecto-jwt.sql.
 
-# Configurar SQL Server para conexiones remotas
+### Configurar SQL Server para conexiones remotas
 
 Habilitar TCP/IP en SQL Server Configuration Manager.
 
@@ -145,13 +145,13 @@ Asegurar que el usuario de SQL (Security > Login > Status) esté habilitado.
 Configurar el firewall de Windows para permitir el tráfico entrante en el puerto 1433.
 
 
-# Crear variables de entorno para Docker
+### Crear variables de entorno para Docker
 DB_SERVER: Servidor de la base de datos.
 DB_NAME: Nombre de la base de datos.
 DB_USER: Usuario de la base de datos.
 DB_PASSWORD: Contraseña de la base de datos.
 
-# Dentro de Docker Desktop ejecutar el contenedor con variables de entorno (en este escenario no estaba incluido el archivo .env)
+### Dentro de Docker Desktop ejecutar el contenedor con variables de entorno (en este escenario no estaba incluido el archivo .env)
 docker run -p 5000:8080 \
   -e DB_SERVER=host.docker.internal \
   -e DB_NAME=TestCujilema1 \
@@ -163,13 +163,13 @@ acujilem: es un nombre de usuario creado en el sitio web Docker HUB.
 backend-jwt: es un nombre descriptivo 
 1.0: el usuario escribe la versión en la que se encuentra su contenedor.
 
-# Descargar la imagen del backend desde Docker Hub
+### Descargar la imagen del backend desde Docker Hub
 https://hub.docker.com/r/ acujilem/backend-jwt
 
 Comando para descargar la imagen:
 docker pull acujilem/backend-jwt:latest
 
-# Ejecutando todo el aplicativo con Docker Compose (en este escenario no estaba incluido el archivo .env)
+### Ejecutando todo el aplicativo con Docker Compose (en este escenario no estaba incluido el archivo .env)
 docker-compose up -d \
   -e DB_SERVER=host.docker.internal \
   -e DB_NAME=TestCujilema1 \
@@ -237,4 +237,37 @@ docker-compose system prune -a
 Comando que eliminó todas las imágenes y contenedores dentro del docker desktop.
 
 Se utilizó el comando porque no estaba tomando unos valores nuevos, posiblemente porque hubo caché en Docker. En este caso se limpio todo.
+
+
+
+# Docker Hub:
+En este link se encuentran las cuatro imágenes contenerizadas publicadas en Docker Hub:
+
+https://hub.docker.com/repositories/acujilem
+
+acujilem/proyecto-jwt-sqlserver
+
+acujilem/proyecto-jwt-test_cujilema
+
+acujilem/proyecto-jwt-login
+
+acujilem/proyecto-jwt-registro_usuario
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
