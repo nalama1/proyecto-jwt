@@ -1,0 +1,59 @@
+services:
+  registro_usuario_jwt:
+    build: ./RegistroUsuarioJwt
+    ports:
+      - "4200:80"
+    depends_on:
+      - test_cujilema  # Depende del backend TestCujilema
+    env_file:
+      - .env  # Carga variables de entorno desde .env
+    networks:
+      - app-network
+
+  login:
+    build: ./Login
+    ports:
+      - "4201:80"
+    depends_on:
+      - test_cujilema 
+    env_file:
+      - .env  
+    networks:
+      - app-network
+
+  test_cujilema:
+    build: ./TestCujilema
+    ports:
+      - "44386:80" #"44386:443"  # Mapea el puerto 443 del contenedor al puerto 44386 de la máquina local
+    depends_on:
+      - sqlserver  # Backend depende de la base de datos
+    env_file:
+      - .env 
+    networks:
+      - app-network
+
+  sqlserver:
+    build:
+      context: ./sql  
+      dockerfile: Dockerfile  
+    ports:
+      - "1433:1433"  # Puerto para acceder a SQL Server desde el exterior
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_PID=Standard
+      - MSSQL_SA_PASSWORD=${DB_PASSWORD} 
+    networks:
+      - app-network      
+    volumes:
+      - sql_data:/var/opt/mssql/data
+    env_file:
+      - .env
+
+
+volumes:
+  sql_data: 
+
+networks:
+  app-network:
+    driver: bridge
+    
