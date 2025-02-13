@@ -94,6 +94,8 @@ Asegúrate de tener instalado SQL Server Management Studio (SSMS) 19.1.56.0.
 5. Compilar el proyecto y seleccionar la opción Pack (se generará un archivo `.nupkg`).
 6. Subir el archivo generado a NuGet y esperar el proceso de indexación (aprox. 1 hora).
 
+![image](https://github.com/user-attachments/assets/63459bb2-e741-4695-8a27-51c91f3ef035)
+
 ## 🛠️ Instalación de paquetes NuGet
 
 ### 🔹 Serilog (para logging)
@@ -151,7 +153,7 @@ DB_NAME: Nombre de la base de datos.
 DB_USER: Usuario de la base de datos.
 DB_PASSWORD: Contraseña de la base de datos.
 
-### Dentro de Docker Desktop ejecutar el contenedor con variables de entorno (en este escenario no estaba incluido el archivo .env)
+### Dentro de Docker Desktop ejecutar el contenedor con variables de entorno (en este escenario no esta incluido el archivo .env)
 docker run -p 5000:8080 \
   -e DB_SERVER=host.docker.internal \
   -e DB_NAME=TestCujilema1 \
@@ -169,7 +171,7 @@ https://hub.docker.com/r/ acujilem/backend-jwt
 Comando para descargar la imagen:
 docker pull acujilem/backend-jwt:latest
 
-### Ejecutando todo el aplicativo con Docker Compose (en este escenario no estaba incluido el archivo .env)
+### Ejecutando todo el aplicativo con Docker Compose (en este escenario no esta incluido el archivo .env)
 docker-compose up -d \
   -e DB_SERVER=host.docker.internal \
   -e DB_NAME=TestCujilema1 \
@@ -238,6 +240,11 @@ Comando que eliminó todas las imágenes y contenedores dentro del docker deskto
 
 Se utilizó el comando porque no estaba tomando unos valores nuevos, posiblemente porque hubo caché en Docker. En este caso se limpio todo.
 
+![Captura de pantalla 2025-02-13 114458](https://github.com/user-attachments/assets/044e8607-e72e-45ee-acf5-e13e83879d4b)
+
+![Captura de pantalla 2025-02-13 114444](https://github.com/user-attachments/assets/889ab8f8-8684-4d46-9b2c-6069b4a1b5a6)
+
+
 
 
 # Docker Hub:
@@ -253,9 +260,22 @@ acujilem/proyecto-jwt-login
 
 acujilem/proyecto-jwt-registro_usuario
 
+![Captura de pantalla 2025-02-13 120256](https://github.com/user-attachments/assets/5ffaf5c7-1869-4432-9e7a-a8cb226d761f)
 
 
 
+# Capturas de pantalla 
+
+Capturas de pantalla del aplicativo.
+![image](https://github.com/user-attachments/assets/9546ffb4-cf4b-4ba3-b3f4-cb1cbb6e701a)
+
+![image](https://github.com/user-attachments/assets/0404ccbf-a8b5-4d16-84fa-0bb91789f7ae)
+
+![image](https://github.com/user-attachments/assets/5aa00ad1-bc29-434a-b49e-a33f7190d8d6)
+
+![image](https://github.com/user-attachments/assets/862fa696-cf36-4ca5-af7f-ac1b67ed08df)
+
+![image](https://github.com/user-attachments/assets/499b004f-0970-4c5b-8c78-130097e57061)
 
 
 
