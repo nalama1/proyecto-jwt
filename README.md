@@ -1,5 +1,5 @@
 # Proyecto JWT
-Este repositorio contiene la implementación de un sistema basado en JWT que incluye un frontend para el registro de Personas y de Usuarios, otro frontend para el login de usuarios, un backend en .NET y una base de datos en SQL Server.
+Este repositorio contiene la implementación de un sistema basado en JWT que incluye un frontend para el registro de Personas y de Usuarios, otro frontend para el login de usuarios, un backend en .NET Core 8 y una base de datos en SQL Server.
 
 # Requisitos previos
 
