@@ -51,7 +51,8 @@ Asegúrate de tener instalado SQL Server Management Studio (SSMS) 19.1.56.0.
 2. Generar una API Key para subir paquetes a la galería.
 3. Crear un proyecto Library e incluir las clases y modelos.
 4. Configurar los metadatos en Propiedades -> Package (versión, licencia, autor, descripción e imagen).
-5. Compilar el proyecto y seleccionar la opción Pack (se generará un archivo `.nupkg`).
+5. Compilar el proyecto y seleccionar la opción Pack (se generará un archivo `
+.nupkg`).
 6. Subir el archivo generado a NuGet y esperar el proceso de indexación (aprox. 1 hora).
 
 ![image](https://github.com/user-attachments/assets/63459bb2-e741-4695-8a27-51c91f3ef035)
@@ -109,11 +110,15 @@ Configurar el firewall de Windows para permitir el tráfico entrante en el puert
 
 ### Crear variables de entorno para Docker
 DB_SERVER: Servidor de la base de datos.
+
 DB_NAME: Nombre de la base de datos.
+
 DB_USER: Usuario de la base de datos.
+
 DB_PASSWORD: Contraseña de la base de datos.
 
-### Dentro de Docker Desktop ejecutar el contenedor con variables de entorno (en este escenario no esta incluido el archivo .env)
+
+### Dentro de Docker Desktop ejecutar el contenedor con variables de entorno (en este escenario no se encuentra incluido el archivo .env)
 docker run -p 5000:8080 \
   -e DB_SERVER=host.docker.internal \
   -e DB_NAME=TestCujilema1 \
@@ -122,8 +127,11 @@ docker run -p 5000:8080 \
   acujilem/backend-jwt:1.0
 
 acujilem: es un nombre de usuario creado en el sitio web Docker HUB.
+
 backend-jwt: es un nombre descriptivo 
+
 1.0: el usuario escribe la versión en la que se encuentra su contenedor.
+
 
 ### Descargar la imagen del backend desde Docker Hub
 https://hub.docker.com/r/ acujilem/backend-jwt
@@ -131,7 +139,7 @@ https://hub.docker.com/r/ acujilem/backend-jwt
 Comando para descargar la imagen:
 docker pull acujilem/backend-jwt:latest
 
-### Ejecutando todo el aplicativo con Docker Compose (en este escenario no esta incluido el archivo .env)
+### Ejecutando todo el aplicativo con Docker Compose (en este escenario no se encuentra incluido el archivo .env)
 docker-compose up -d \
   -e DB_SERVER=host.docker.internal \
   -e DB_NAME=TestCujilema1 \
@@ -193,6 +201,7 @@ docker-compose logs contenedorID
 
 
 #📜 un comando adicional utilizado, pero con ¡precaución al usarlo!
+
 docker-compose system prune -a 
 
 
