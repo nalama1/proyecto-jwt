@@ -244,7 +244,7 @@ Capturas de pantalla del aplicativo.
 
 ![image](https://github.com/user-attachments/assets/862fa696-cf36-4ca5-af7f-ac1b67ed08df)
 
-![image](https://github.com/user-attachments/assets/499b004f-0970-4c5b-8c78-130097e57061)
+![ListadoPersonas](https://github.com/user-attachments/assets/844ee809-9841-487c-a0fb-51abba969bb6)
 
 
 
